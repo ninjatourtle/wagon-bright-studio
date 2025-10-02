@@ -35,7 +35,7 @@ export default function ContactSection() {
       icon: Mail,
       title: "Email",
       content: "info@kbslogistic.ru",
-      subContent: "",
+      subContent: "info@flipaclip.ru",
     },
     {
       icon: MapPin,
