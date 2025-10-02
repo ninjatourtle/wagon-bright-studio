@@ -11,7 +11,7 @@ export default function Footer() {
               <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
                 <Train className="w-6 h-6 text-accent-foreground" />
               </div>
-              <span className="font-montserrat font-bold text-xl">flipaclip - Покраска Вагонов</span>
+              <span className="font-montserrat font-bold text-xl">FLIPACLIP</span>
             </div>
             <p className="text-primary-foreground/80 text-sm">
               Профессиональная покраска железнодорожных вагонов с гарантией качества
@@ -55,6 +55,10 @@ export default function Footer() {
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-accent" />
                 <span>info@kbslogistic.ru</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <Mail className="w-4 h-4 text-accent" />
+                <span>info@flipaclip.ru</span>
               </li>
             </ul>
           </div>

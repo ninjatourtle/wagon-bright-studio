@@ -36,7 +36,7 @@ export default function Navigation() {
               <span className="text-primary-foreground font-bold text-xl">FC</span>
             </div>
             <span className="font-montserrat font-bold text-xl text-foreground">
-              flipaclip - Покраска Вагонов
+              FLIPACLIP
             </span>
           </div>
 

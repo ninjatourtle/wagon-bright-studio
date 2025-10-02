@@ -26,28 +26,28 @@ export default function ContactSection() {
 
   const contactInfo = [
     {
-      icon: MapPin,
-      title: "Адрес",
-      content: "г. Москва, ул. Промышленная, 42",
-      subContent: "Центральный офис",
-    },
-    {
       icon: Phone,
       title: "Телефон",
-      content: "+7 (800) 555-35-35",
-      subContent: "Бесплатно по России",
+      content: "+7 (495) 157-83-02",
+      subContent: "",
     },
     {
       icon: Mail,
       title: "Email",
-      content: "info@rzd-pokraska.ru",
-      subContent: "Для коммерческих предложений",
+      content: "info@kbslogistic.ru",
+      subContent: "",
+    },
+    {
+      icon: MapPin,
+      title: "Адрес",
+      content: "г. Москва, Дубининская ул., д. 57,",
+      subContent: "стр. 2, помещ. 12Т",
     },
     {
       icon: Clock,
-      title: "График работы",
-      content: "Пн-Пт: 8:00 - 20:00",
-      subContent: "Сб-Вс: 9:00 - 18:00",
+      title: "Режим работы",
+      content: "Пн-Пт: 09:00 - 18:00",
+      subContent: "Сб-Вс: по договоренности",
     },
   ];
 
@@ -120,26 +120,33 @@ export default function ContactSection() {
 
           {/* Contact Information */}
           <div className="space-y-4">
-            {contactInfo.map((info, index) => (
-              <Card key={index} className="group hover:shadow-elegant transition-all duration-300">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-gradient-accent rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <info.icon className="w-6 h-6 text-accent-foreground" />
+            <Card className="shadow-industrial">
+              <CardContent className="p-8">
+                <h3 className="font-montserrat font-semibold text-2xl text-foreground mb-6">
+                  Контактная информация
+                </h3>
+                <div className="space-y-4">
+                  {contactInfo.map((info, index) => (
+                    <div key={index} className="flex items-start space-x-4 pb-4 border-b border-border last:border-0 last:pb-0">
+                      <div className="flex-shrink-0">
+                        <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center">
+                          <info.icon className="w-5 h-5 text-accent-foreground" />
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="font-montserrat font-semibold text-foreground mb-1">
+                          {info.title}
+                        </h4>
+                        <p className="text-foreground text-base">{info.content}</p>
+                        {info.subContent && (
+                          <p className="text-muted-foreground text-sm">{info.subContent}</p>
+                        )}
                       </div>
                     </div>
-                    <div>
-                      <h4 className="font-montserrat font-semibold text-foreground mb-1">
-                        {info.title}
-                      </h4>
-                      <p className="text-foreground text-lg">{info.content}</p>
-                      <p className="text-muted-foreground text-sm">{info.subContent}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
 
             {/* CTA Card */}
             <Card className="bg-gradient-primary text-primary-foreground">
