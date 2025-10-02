@@ -5,54 +5,51 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/components/ui/use-toast";
-
 export default function ContactSection() {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     email: "",
-    message: "",
+    message: ""
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "Заявка отправлена!",
-      description: "Мы свяжемся с вами в течение 30 минут",
+      description: "Мы свяжемся с вами в течение 30 минут"
     });
-    setFormData({ name: "", phone: "", email: "", message: "" });
+    setFormData({
+      name: "",
+      phone: "",
+      email: "",
+      message: ""
+    });
   };
-
-  const contactInfo = [
-    {
-      icon: Phone,
-      title: "Телефон",
-      content: "+7 (495) 157-83-02",
-      subContent: "",
-    },
-    {
-      icon: Mail,
-      title: "Email",
-      content: "info@kbslogistic.ru",
-      subContent: "info@flipaclip.ru",
-    },
-    {
-      icon: MapPin,
-      title: "Адрес",
-      content: "г. Москва, Дубининская ул., д. 57,",
-      subContent: "стр. 2, помещ. 12Т",
-    },
-    {
-      icon: Clock,
-      title: "Режим работы",
-      content: "Пн-Пт: 09:00 - 18:00",
-      subContent: "Сб-Вс: по договоренности",
-    },
-  ];
-
-  return (
-    <section id="contact" className="py-20 bg-muted">
+  const contactInfo = [{
+    icon: Phone,
+    title: "Телефон",
+    content: "+7 (495) 157-83-02",
+    subContent: ""
+  }, {
+    icon: Mail,
+    title: "Email",
+    content: "info@kbslogistic.ru",
+    subContent: "info@flipaclip.ru"
+  }, {
+    icon: MapPin,
+    title: "Адрес",
+    content: "г. Москва, Дубининская ул., д. 57,",
+    subContent: "стр. 2, помещ. 12Т"
+  }, {
+    icon: Clock,
+    title: "Режим работы",
+    content: "Пн-Пт: 09:00 - 18:00",
+    subContent: "Сб-Вс: по договоренности"
+  }];
+  return <section id="contact" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-montserrat font-bold text-4xl md:text-5xl text-foreground mb-4">
@@ -72,43 +69,28 @@ export default function ContactSection() {
               </h3>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <Input
-                    placeholder="Ваше имя"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                    className="h-12"
-                  />
+                  <Input placeholder="Ваше имя" value={formData.name} onChange={e => setFormData({
+                  ...formData,
+                  name: e.target.value
+                })} required className="h-12" />
                 </div>
                 <div>
-                  <Input
-                    type="tel"
-                    placeholder="Телефон"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    required
-                    className="h-12"
-                  />
+                  <Input type="tel" placeholder="Телефон" value={formData.phone} onChange={e => setFormData({
+                  ...formData,
+                  phone: e.target.value
+                })} required className="h-12" />
                 </div>
                 <div>
-                  <Input
-                    type="email"
-                    placeholder="Email"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
-                    className="h-12"
-                  />
+                  <Input type="email" placeholder="Email" value={formData.email} onChange={e => setFormData({
+                  ...formData,
+                  email: e.target.value
+                })} required className="h-12" />
                 </div>
                 <div>
-                  <Textarea
-                    placeholder="Опишите вашу задачу"
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    required
-                    rows={4}
-                    className="resize-none"
-                  />
+                  <Textarea placeholder="Опишите вашу задачу" value={formData.message} onChange={e => setFormData({
+                  ...formData,
+                  message: e.target.value
+                })} required rows={4} className="resize-none" />
                 </div>
                 <Button type="submit" variant="hero" size="lg" className="w-full">
                   <Send className="w-4 h-4 mr-2" />
@@ -126,8 +108,7 @@ export default function ContactSection() {
                   Контактная информация
                 </h3>
                 <div className="space-y-4">
-                  {contactInfo.map((info, index) => (
-                    <div key={index} className="flex items-start space-x-4 pb-4 border-b border-border last:border-0 last:pb-0">
+                  {contactInfo.map((info, index) => <div key={index} className="flex items-start space-x-4 pb-4 border-b border-border last:border-0 last:pb-0">
                       <div className="flex-shrink-0">
                         <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center">
                           <info.icon className="w-5 h-5 text-accent-foreground" />
@@ -138,12 +119,9 @@ export default function ContactSection() {
                           {info.title}
                         </h4>
                         <p className="text-foreground text-base">{info.content}</p>
-                        {info.subContent && (
-                          <p className="text-muted-foreground text-sm">{info.subContent}</p>
-                        )}
+                        {info.subContent && <p className="text-base text-zinc-900">{info.subContent}</p>}
                       </div>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </CardContent>
             </Card>
@@ -166,6 +144,5 @@ export default function ContactSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
