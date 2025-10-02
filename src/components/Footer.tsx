@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-foreground text-primary-foreground py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
@@ -18,26 +18,15 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Services */}
+          {/* Legal Info */}
           <div>
-            <h3 className="font-montserrat font-semibold text-lg mb-4">Услуги</h3>
-            <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li className="hover:text-accent transition-colors cursor-pointer">Покраска вагонов</li>
-              <li className="hover:text-accent transition-colors cursor-pointer">Антикоррозийная защита</li>
-              <li className="hover:text-accent transition-colors cursor-pointer">Ремонт покрытия</li>
-              <li className="hover:text-accent transition-colors cursor-pointer">Выездные работы</li>
-            </ul>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-montserrat font-semibold text-lg mb-4">Информация</h3>
-            <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li className="hover:text-accent transition-colors cursor-pointer">О компании</li>
-              <li className="hover:text-accent transition-colors cursor-pointer">Сертификаты</li>
-              <li className="hover:text-accent transition-colors cursor-pointer">Клиенты</li>
-              <li className="hover:text-accent transition-colors cursor-pointer">Вакансии</li>
-            </ul>
+            <h3 className="font-montserrat font-semibold text-lg mb-4">ООО «КБС-ЛОГИСТИК»</h3>
+            <div className="text-sm text-primary-foreground/80 space-y-1">
+              <p>ИНН: 9725091562</p>
+              <p>ОГРН: 1227700468192</p>
+              <p>КПП: 772501001</p>
+              <p>Генеральный директор: Чепец Петр Петрович</p>
+            </div>
           </div>
 
           {/* Contacts */}
@@ -46,7 +35,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-primary-foreground/80">
               <li className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-accent mt-0.5" />
-                <span>115054, г. Москва, Дубининская ул., д. 57, стр. 2</span>
+                <span>115054, г. Москва, Дубининская ул., д. 57, стр. 2, помещ. 12Т</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-accent" />
@@ -65,15 +54,10 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-primary-foreground/20">
-          <div className="text-center space-y-2">
+          <div className="text-center">
             <p className="text-sm text-primary-foreground/60">
-              © 2024 ООО «КБС-ЛОГИСТИК». Все права защищены.
+              © 2025 ООО «КБС-ЛОГИСТИК». Все права защищены.
             </p>
-            <div className="text-xs text-primary-foreground/50 space-y-1">
-              <p>ИНН: 9725091562 | ОГРН: 1227700468192 | КПП: 772501001</p>
-              <p>Адрес: 115054, г. Москва, Дубининская ул., д. 57, стр. 2, помещ. 12Т</p>
-              <p>Генеральный директор: Чепец Петр Петрович</p>
-            </div>
           </div>
         </div>
       </div>
