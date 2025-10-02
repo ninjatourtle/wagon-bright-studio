@@ -26,7 +26,7 @@ export default function Footer() {
               <p>ОГРН: 1227700468192</p>
               <p>КПП: 772501001</p>
               <p>Генеральный директор: Чепец Петр Петрович</p>
-              <p>Для прямых обращений: p.chepec@kbstender.ru</p>
+              <p>Для прямых обращений: p.chepec@kbslogistic.ru</p>
             </div>
           </div>
 
@@ -44,7 +44,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-accent" />
-                <span>info@kbstender.ru</span>
+                <span>info@kbslogistic.ru</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-accent" />
