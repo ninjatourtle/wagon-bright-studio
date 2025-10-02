@@ -26,6 +26,7 @@ export default function Footer() {
               <p>ОГРН: 1227700468192</p>
               <p>КПП: 772501001</p>
               <p>Генеральный директор: Чепец Петр Петрович</p>
+              <p>Для прямых обращений: p.chepec@kbstender.ru</p>
             </div>
           </div>
 
