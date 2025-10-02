@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { Train } from "lucide-react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,10 +33,8 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-              <Train className="w-6 h-6 text-accent-foreground" />
-            </div>
-            <span className="font-montserrat font-bold text-xl text-foreground">
+            <img src={logo} alt="КБС-ЛОГИСТИК Logo" className="w-12 h-12 object-contain" />
+            <span className="font-montserrat font-bold text-xl text-[#FF6B35]">
               FLIPACLIP
             </span>
           </div>
