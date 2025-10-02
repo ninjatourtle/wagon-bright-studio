@@ -5,6 +5,12 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import paintingProcess from "@/assets/painting-process.jpg";
 import finishedWagon from "@/assets/finished-wagon.jpg";
 import teamWork from "@/assets/team-work.jpg";
+import sandblastingWagon from "@/assets/sandblasting-wagon.jpg";
+import passengerWagon from "@/assets/passenger-wagon.jpg";
+import tankWagonPainting from "@/assets/tank-wagon-painting.jpg";
+import qualityInspection from "@/assets/quality-inspection.jpg";
+import hopperWagonCoating from "@/assets/hopper-wagon-coating.jpg";
+import depotOverview from "@/assets/depot-overview.jpg";
 
 const galleryItems = [
   {
@@ -30,20 +36,62 @@ const galleryItems = [
   },
   {
     id: 4,
-    image: paintingProcess,
-    title: "Подготовка поверхности",
+    image: sandblastingWagon,
+    title: "Пескоструйная обработка",
     category: "Технология",
-    description: "Пескоструйная обработка перед нанесением грунта",
+    description: "Подготовка поверхности вагона перед нанесением грунта",
   },
   {
     id: 5,
-    image: finishedWagon,
+    image: passengerWagon,
     title: "Пассажирский вагон",
     category: "Результат",
     description: "Покраска пассажирского вагона в корпоративные цвета",
   },
   {
     id: 6,
+    image: tankWagonPainting,
+    title: "Покраска цистерны",
+    category: "Процесс",
+    description: "Нанесение защитного покрытия на вагон-цистерну",
+  },
+  {
+    id: 7,
+    image: qualityInspection,
+    title: "Контроль качества",
+    category: "Технология",
+    description: "Проверка толщины покрытия специальным оборудованием",
+  },
+  {
+    id: 8,
+    image: hopperWagonCoating,
+    title: "Антикоррозийная защита",
+    category: "Технология",
+    description: "Нанесение антикоррозийного покрытия на вагон-хоппер",
+  },
+  {
+    id: 9,
+    image: depotOverview,
+    title: "Производственная площадка",
+    category: "Процесс",
+    description: "Общий вид депо с вагонами на разных этапах покраски",
+  },
+  {
+    id: 10,
+    image: paintingProcess,
+    title: "Окрасочная камера",
+    category: "Технология",
+    description: "Современное оборудование для профессиональной покраски",
+  },
+  {
+    id: 11,
+    image: finishedWagon,
+    title: "Платформа после ремонта",
+    category: "Результат",
+    description: "Железнодорожная платформа с обновленным покрытием",
+  },
+  {
+    id: 12,
     image: teamWork,
     title: "Финальная проверка",
     category: "Процесс",

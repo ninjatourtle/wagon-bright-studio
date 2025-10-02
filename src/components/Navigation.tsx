@@ -33,10 +33,10 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">РП</span>
+              <span className="text-primary-foreground font-bold text-xl">FC</span>
             </div>
             <span className="font-montserrat font-bold text-xl text-foreground">
-              РЖД Покраска
+              flipaclip - Покраска Вагонов
             </span>
           </div>
 
@@ -56,7 +56,7 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="hero" size="lg" className="group">
               <Phone className="w-4 h-4 mr-2 group-hover:animate-pulse" />
-              +7 (800) 555-35-35
+              +7 (495) 157-83-02
             </Button>
           </div>
 
@@ -85,7 +85,7 @@ export default function Navigation() {
               ))}
               <Button variant="hero" size="lg" className="w-full">
                 <Phone className="w-4 h-4 mr-2" />
-                +7 (800) 555-35-35
+                +7 (495) 157-83-02
               </Button>
             </div>
           </div>

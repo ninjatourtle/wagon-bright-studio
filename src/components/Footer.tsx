@@ -11,7 +11,7 @@ export default function Footer() {
               <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
                 <Train className="w-6 h-6 text-accent-foreground" />
               </div>
-              <span className="font-montserrat font-bold text-xl">РЖД Покраска</span>
+              <span className="font-montserrat font-bold text-xl">flipaclip - Покраска Вагонов</span>
             </div>
             <p className="text-primary-foreground/80 text-sm">
               Профессиональная покраска железнодорожных вагонов с гарантией качества
@@ -44,26 +44,33 @@ export default function Footer() {
           <div>
             <h3 className="font-montserrat font-semibold text-lg mb-4">Контакты</h3>
             <ul className="space-y-3 text-sm text-primary-foreground/80">
-              <li className="flex items-center space-x-2">
-                <MapPin className="w-4 h-4 text-accent" />
-                <span>г. Москва, ул. Промышленная, 42</span>
+              <li className="flex items-start space-x-2">
+                <MapPin className="w-4 h-4 text-accent mt-0.5" />
+                <span>115054, г. Москва, Дубининская ул., д. 57, стр. 2</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-accent" />
-                <span>+7 (800) 555-35-35</span>
+                <span>+7 (495) 157-83-02</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-accent" />
-                <span>info@rzd-pokraska.ru</span>
+                <span>info@kbslogistic.ru</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-center">
-          <p className="text-sm text-primary-foreground/60">
-            © 2024 РЖД Покраска. Все права защищены.
-          </p>
+        <div className="mt-8 pt-8 border-t border-primary-foreground/20">
+          <div className="text-center space-y-2">
+            <p className="text-sm text-primary-foreground/60">
+              © 2024 ООО «КБС-ЛОГИСТИК». Все права защищены.
+            </p>
+            <div className="text-xs text-primary-foreground/50 space-y-1">
+              <p>ИНН: 9725091562 | ОГРН: 1227700468192 | КПП: 772501001</p>
+              <p>Адрес: 115054, г. Москва, Дубининская ул., д. 57, стр. 2, помещ. 12Т</p>
+              <p>Генеральный директор: Чепец Петр Петрович</p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
