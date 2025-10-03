@@ -1,16 +1,14 @@
 import { MapPin, Phone, Mail } from "lucide-react";
 import logo from "@/assets/logo.svg";
-
 export default function Footer() {
-  return (
-    <footer className="bg-foreground text-primary-foreground py-12">
+  return <footer className="bg-foreground text-primary-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img src={logo} alt="КБС-ЛОГИСТИК Logo" className="w-12 h-12 object-contain" />
-              <span className="font-montserrat font-bold text-xl text-[#FF6B35]">FLIPACLIP</span>
+              <span className="font-montserrat font-bold text-xl text-[#f97415]">FLIPACLIP</span>
             </div>
             <p className="text-primary-foreground/80 text-sm">
               Профессиональная покраска железнодорожных вагонов с гарантией качества
@@ -61,6 +59,5 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }
