@@ -41,8 +41,8 @@ export default function ContactSection() {
   }, {
     icon: MapPin,
     title: "Адрес",
-    content: "г. Москва, Дубининская ул., д. 57,",
-    subContent: "стр. 2, помещ. 12Т"
+    content: "г. Москва, Варшавское шоссе, д. 56, стр. 2",
+    subContent: ""
   }, {
     icon: Clock,
     title: "Режим работы",
